@@ -110,7 +110,6 @@
 	color: white;
 }
 .body {
-	/* max-width: 1920px; */
 	min-width: 375px;
 	background-color: black;
 }
@@ -202,16 +201,16 @@ html {
 	align-items: center;
 }
 .li-header-navigation-item {
-    height: 100%;
-    width: max-content;
+	height: 100%;
+	width: max-content;
 }
-.a-nav-link{
-    height: 100%;
-    width: max-content;
+.a-nav-link {
+	height: 100%;
+	width: max-content;
 	padding: 0px 20px;
-    display: inline-block;
-    display: flex;
-    align-items: center;
+	display: inline-block;
+	display: flex;
+	align-items: center;
 }
 .li-header-navigation-item:hover {
 	background-color: var(--gray-hover);
@@ -252,12 +251,9 @@ html {
 		grid-template-columns: 0.15fr max-content 3fr max-content 0.25fr max-content 0.15fr;
 		grid-template-rows: 70px 50px;
 	}
-/* 	.li-header-navigation-item {
-    } */
-    .a-nav-link{
-        padding: 0px 10px;
-        
-    } 
+	.a-nav-link {
+		padding: 0px 10px;
+	}
 	.div-upper-header {
 		grid-template-columns: 10px max-content 0.85% max-content 1fr max-content 0.75% max-content 10px;
 	}
@@ -348,20 +344,6 @@ html {
 		);
 	grid-template-rows: 730px 600px;
 }
-
-/* @media (max-width: 1780px) {
-	.div-collection-container {
-		grid-template-rows: repeat(4, 1fr);
-        grid-template-columns: 1fr;
-	}
-	.div-season-20-21,
-	.div-new-collection,
-	.div-collection-img,
-	.div-collection-2018 {
-        grid-area: auto;
-    }
-} */
-
 /* 
 
 
@@ -391,8 +373,8 @@ html {
 	grid-template-rows: repeat(3, max-content);
 	justify-items: center;
 	grid-gap: 50px;
-	padding: 93px 0;
-    width: 100%;
+	padding: 93px 10px;
+	width: 100%;
 }
 .div-season-clocks {
 	max-width: 880px;
@@ -408,8 +390,6 @@ html {
 	display: grid;
 	grid-template-areas: "img" "." "name" "." "price";
 	grid-template-rows: 325px 25px max-content 10px max-content;
-	/*     align-items: center;*/
-	/*     grid-template-rows: max-content 25px max-content 10px max-content;*/
 }
 .div-season-hr {
 	border-top: solid 1px white;
@@ -439,7 +419,7 @@ html {
 	font-weight: 700;
 	font-size: 36px;
 	line-height: 133.3%;
-    text-align: center;
+	text-align: center;
 }
 .button-catalogue {
 	font-weight: 400;
@@ -521,13 +501,14 @@ html {
 	font-weight: 700;
 	font-size: 36px;
 	line-height: 133.3%;
-    text-align: center;
+	text-align: center;
 }
 .div-new-arrivals-container {
 	height: 1289px;
 	display: grid;
 	justify-items: center;
 	grid-template-rows: 120fr max-content 40fr 0px 81fr max-content 150fr;
+    padding: 10px;
 }
 .h2-new-arrivals-heading {
 	grid-area: 2/1/3/2;
@@ -545,7 +526,6 @@ html {
 	grid-gap: 40px 23px;
 	max-width: 1110px;
 	grid-area: 6/1/7/2;
-
 	overflow: auto;
 	width: 100%;
 }
@@ -554,14 +534,6 @@ html {
 	grid-template-areas: "img" "." "name" "." "price";
 	grid-template-rows: 325px 25px max-content 10px max-content;
 }
-/* .div-new-arrivals-clocks {
-	width: 880px;
-	margin: auto;
-	display: grid;
-	grid-template-columns: repeat(3, 260px);
-	grid-auto-flow: row;
-	grid-gap: 50px;
-} */
 /* 
 
 
@@ -608,8 +580,8 @@ html {
 		grid-template-rows: repeat(2, max-content);
 	}
 }
-@media (max-width: 540px){
-    .div-brands-list {
+@media (max-width: 540px) {
+	.div-brands-list {
 		grid-template-columns: 1fr;
 		grid-template-rows: repeat(4, max-content);
 	}
@@ -641,18 +613,13 @@ html {
 	font-size: 14px;
 	line-height: 150%;
 }
-.gg {
-}
 .footer {
-	/*     width: max-content;
-    margin: auto; */
 	background: no-repeat center url(./img/bgc-face.jpg), transparent;
 	background-size: cover;
 	padding: 100px 0 80px 0;
 	display: grid;
 	grid-template-columns: 1fr repeat(3, 350px) 1fr;
 	grid-template-areas: ". shop-info categories newsletter .";
-	/*     grid-template-rows: max-content; */
 	grid-gap: 20px;
 }
 .div-flexbox-for-categories {
@@ -692,25 +659,17 @@ html {
 .input-email::placeholder {
 	color: rgba(255, 255, 255, 0.4);
 }
-.gg {
-}
 @media (max-width: 1110px) {
 	.footer {
-		/* 		padding: 100px 10px 80px 10px;
-		grid-template: repeat(3,max-content) / 1fr;
-		grid-template-areas: "shop-info" "categories" "newsletter";
-        justify-items: center; */
-
 		padding: 100px 10px 80px 10px;
-
 		grid-template-columns: 1fr minmax(350px, 3fr) 1fr;
 		grid-template-areas: ". shop-info . " " . categories . " " . newsletter . ";
 	}
 }
-@media (max-width: 410px){
-    .footer {
-        grid-column-gap: 0px;
-    }
+@media (max-width: 410px) {
+	.footer {
+		grid-column-gap: 0px;
+	}
 }
 /*
 
@@ -720,7 +679,7 @@ html {
 	display: flex;
 	justify-content: space-between;
 	margin: auto;
-    padding: 5px;
+	padding: 5px;
 }
 .span-rights-reserved {
 	font-weight: 400;
